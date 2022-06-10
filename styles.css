@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+
+:root {
+
+    --ff-paragraph: 'Lora', sans-serif;
+    --ff-titles: 'Cormorant', sans-serif;
+
+    --fc-paragraph: #437AC1;
+    --fc-hover: #FF8A00;
+
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #f5f9fd;
+}
+
+.page {
+    width: clamp(100rem, 100rem + 15vw, 128rem);
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        "inicio"
+        "main"
+        "footer";
+    height: 100vh;
+}
+
+header {
+    grid-area: inicio;
+    position: fixed;
+    margin: 0 auto;
+    display: flex;
+    height: 8rem;
+    width: inherit;
+
+    align-items: center;
+    justify-content: space-between;
+
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    box-shadow: 0px 6px 6px -6px rgba(175, 175, 175, 0.65);
+
+    padding: 0 12px;
+    z-index: 1;
+}
+
+header img {
+    height: 5.6rem;
+
+}
+
+header nav {
+    display: flex;
+    gap: clamp(1rem, 0.5rem + 1vw, 6rem);
+}
+
+header a {
+    font-family: var(--ff-paragraph);
+    font-weight: 800;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--fc-paragraph);
+
+    transition: all 0.3s;
+}
+
+header a:hover {
+    color: var(--fc-hover);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
+    /* overflow-y: scroll; */
+    margin: 9.2rem 0 0;
+    width: inherit;
+
+}
+
+#inicio {
+
+    height: 76.8rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+
+}
+
+#inicio div {
+    width: 70rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 11.8rem;
+}
+
+#inicio #home_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: darken;
+    fill: cover;
+    height: 76.8rem;
+    opacity: 45%;
+}
+
+#inicio div h1 {
+    font-family: var(--ff-titles);
+    font-weight: 700;
+    font-size: 6rem;
+    text-align: right;
+    margin-top: 8rem;
+    margin-right: 5.5rem;
+    color: #7092BF;
+    text-shadow: 0.55px 0.55px 1px #000000;
+}
+
+#alongamento {
+
+    height: 76.8rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+#alongamento p {
+    padding-left: 20px;
+    width: 55rem;
+    font-family: var(--ff-paragraph);
+    font-size: 3.6rem;
+    color: var(--fc-paragraph);
+}
+
+#alongamento #extension_background {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    mix-blend-mode: darken;
+    fill: cover;
+    height: 76.8rem;
+    opacity: 65%;
+}
+
+
+#tecnicas {
+    height: 76.8rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+#contato {
+
+    height: 76.8rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+
+
+footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+}
+
+footer div {
+    border-top: 1px solid #7B9ECB;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.35rem;
+    color: #7B9ECB;
+}
+
+footer div p, a {
+    text-decoration: none;
+    font-family: var(--ff-paragraph);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #7B9ECB;
+
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(175, 173, 173, 0.2);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 1px solid rgba(175, 173, 173, 0.1);
+    /* creates padding around scroll thumb */
+}
