@@ -439,6 +439,7 @@ footer div p, footer div a {
 
         background: transparent;
         background-image: none;
+        width: auto;
     }
 
     header a {
