@@ -5,7 +5,8 @@
  
 <img src="https://user-images.githubusercontent.com/20481087/173927843-979d1d76-1a87-4887-b16e-46f65b9b0fcd.gif" height="480"/>
   </div>
-## Descrição:
+  
+## Descrição
 Página web feita como desafio pessoal, usado o negócio e a marca de uma colega de trabalho. (Todos os dados contidos na página são de um negócio real)
 
 ### Tecnologias
