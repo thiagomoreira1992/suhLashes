@@ -8,16 +8,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Lora:wght@400;500;700&family=Nunito:wght@500&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Lora:wght@400;500;700&family=Nunito:wght@500&display=swap"
         rel="stylesheet">
-    <title>Document</title>
+    <script type="text/javascript" src="./scripts.js"></script>
+    <title>Suelym Michels - Lash Design</title>
 </head>
 
 <body>
     <div class="page">
         <header>
+            <div class="menu_mobile">
+                <button id="openMenu" onclick="openMenu()">
+                    <img src="./assets/AiOutlineMenuFold.svg" alt="Abrir menu">
+                </button>
+                <button id="closeMenu" class="hide" type="button" onclick="closeMenu()">
+                    <img src="./assets/AiOutlineMenuUnfold.svg" alt="Fechar menu">
+                </button>
+            </div>
             <img src="./assets/smLash_logo.svg" alt="Logo de Suelym Michels Lash Designer" />
-            <nav>
+            <nav id="menu" >
                 <a href="#inicio">Início</a>
                 <a href="#alongamento">Alongamento</a>
                 <a href="#tecnicas">Técnicas</a>
@@ -27,10 +37,13 @@
         <main>
             <section id="inicio">
                 <div>
-                    <h1>Alongamento de cílio, beleza que se vê</h1>
-                    <img src="./assets/smLash_desktop.svg" alt="Logo Marca Suelym Michels Lash Designer">
+                    <h1>Alongamento de cílios, beleza que se vê</h1>
+                    <img id="desktop_image" src="./assets/smLash_desktop.svg"
+                        alt="Logo Marca Suelym Michels Lash Designer" />
+                    <img id="mobile_image" src="./assets/smLash_mobile.svg"
+                        alt="Logo Marca Suelym Michels Lash Designer" />
                 </div>
-                <img id="home_background"src="./assets/home_background.svg"
+                <img id="home_background" src="./assets/home_background.svg"
                     alt="Imagem de fundo, imagem do rosto uma mulher com cílios alongados" />
             </section>
             <section id="alongamento">
@@ -48,7 +61,8 @@
             </section>
             <section id="tecnicas">
                 <article>
-                    <p> Volume Brasileiro: é a técnica indicada para quem gosta de volume
+                    <p> &nbsp;&nbsp;&nbsp;&nbsp;<span>Volume Brasileiro:</span> é a técnica indicada para quem gosta de
+                        volume
                         porém sem deixar o ar de naturalidade de lado. O fio utilizado é em
                         formato de Y. </p>
                     <img src="./assets/y_extension.svg"
@@ -57,20 +71,25 @@
                 <article>
                     <img src="./assets/w_extensio.svg"
                         alt="Imagem de pinça com cílio sintético do tipo W (volume egípcio)" />
-                    <p> Volume Egípcio: é a técnica indicada para quem ama volume e um olhar
+                    <p> &nbsp;&nbsp;&nbsp;&nbsp;<span>Volume Egípcio:</span> é a técnica indicada para quem ama volume e
+                        um olhar
                         destacado. O fio utilizado é em formato de W.</p>
                 </article>
             </section>
             <section id="contato">
                 <h1>Informações e contato</h1>
-                <p>
-                    <img src="./assets/AiOutlineWhatsApp.svg" alt="Whatsapp:">
-                    <span>(48) 98420-7286</span>
-                </p>
-                <p>
-                    <img src="./assets/AiOutlineInstagram.svg" alt="Instagram:">
-                    <span>@smlashess_</span>
-                </p>
+                <div>
+                    <a href="tel:+5548984207286">
+                            <img src="./assets/AiOutlineWhatsApp.svg" alt="Whatsapp:">
+                            (48) 98420-7286                     
+                    </a>
+                    <a href="http://instagram.com/smlashes_" target="_blank">
+                        <img src="./assets/AiOutlineInstagram.svg" alt="Instagram:">
+                        @smlashess_
+                    </a>
+                </div>
+                <img id="info_background"  src="./assets/info_background.svg"
+                    alt="Imagem de fundo da página de informações e contato">
             </section>
         </main>
         <footer>
@@ -80,6 +99,7 @@
             </div>
         </footer>
     </div>
+
 </body>
 
 </html>
